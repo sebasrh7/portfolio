@@ -1,39 +1,57 @@
 ---
 import GitHub from "./icons/GitHub.astro"
-import NextJS from "./icons/NextJS.astro"
 import Tailwind from "./icons/Tailwind.astro"
+import MongoDB from "./icons/MongoDB.astro"
+import Express from "./icons/Express.astro"
+import React from "./icons/React.astro"
+import NodeJS from "./icons/NodeJS.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 
 const TAGS = {
-  NEXT: {
-    name: "Next.js",
-    class: "bg-black text-white",
-    icon: NextJS,
-  },
   TAILWIND: {
     name: "Tailwind CSS",
     class: "bg-[#003159] text-white",
     icon: Tailwind,
   },
+  MONGODB: {
+    name: "MongoDB",
+    class: "bg-[#0e853f] text-white",
+    icon: MongoDB,
+  },
+  EXPRESS: {
+    name: "Express",
+    class: "bg-[#000000] text-white",
+    icon: Express,
+  },
+  REACT: {
+    name: "React",
+    class: "bg-[#3b7b98] text-white",
+    icon: React,
+  },
+  NODE: {
+    name: "Node.js",
+    class: "bg-[#537f4f] text-white",
+    icon: NodeJS,
+  }
 }
 const PROJECTS = [
   {
-    title: "SVGL - A beautiful library with SVG logos",
+    title: "URL Shortener",
     description:
-      "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://svgl.vercel.app/",
-    github: "https://github.com/pheralb/svgl",
-    image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Servicio de acortamiento de URLs. Desarrollado con el stack MERN (MongoDB, Express, React y Node.js). Incorpora autenticación mediante Auth0 y utiliza Material-UI para el diseño.",
+    link: "https://url-sr.netlify.app/",
+    github: "https://github.com/sebasrh7/url-shortener",
+    image: "/projects/urlshortener.webp",
+    tags: [TAGS.MONGODB, TAGS.EXPRESS, TAGS.REACT, TAGS.NODE],
   },
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
-    description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    title: "REACH.DOG - Clone",
+    description: "Clon de la página principal de Reach Dog. Realizado como parte de una prueba técnica. Desarrollado con React y Tailwind CSS.",
+    link: "https://reachdog-clone.netlify.app/",
+    github: "https://github.com/sebasrh7/reachdog-clone",
+    image: "/projects/reachdogclone.webp",
+    tags: [ TAGS.REACT, TAGS.TAILWIND],
   },
 ]
 ---
@@ -72,7 +90,6 @@ const PROJECTS = [
             <LinkButton href={github}>
               <GitHub class="size-6" />
               Code
-              
             </LinkButton>
           )}
           {link && (
