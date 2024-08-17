@@ -3,6 +3,7 @@ const personalImageAlt = "Sebastian Rengifo Hidalgo"
 import Badge from "@/components/Badge.astro"
 import LinkedInIcon from "@/components/icons/LinkedIn.astro"
 import MailIcon from "@/components/icons/Mail.astro"
+import GitHubIcon from "@/components/icons/GitHub.astro"
 import SocialPill from "@/components/SocialPill.astro"
 ---
 
@@ -10,7 +11,7 @@ import SocialPill from "@/components/SocialPill.astro"
  
     <div class="flex gap-4 mb-4">
       <img
-        class="rounded-full shadow-lg size-36"
+        class="rounded-full shadow-lg size-32 md:size-40"
         src="/sebastian.webp"
         alt={personalImageAlt}/>
 
@@ -40,7 +41,7 @@ import SocialPill from "@/components/SocialPill.astro"
   <p
     class="mt-4 text-lg text-gray-800 dark:text-gray-300"
   >
-  Enfocado en el desarrollo de aplicaciones web.
+  Especializado en el desarrollo de aplicaciones web.
   </p>
   
   <nav class="flex flex-wrap gap-4 mt-8">
@@ -51,6 +52,11 @@ import SocialPill from "@/components/SocialPill.astro"
     <SocialPill href="https://www.linkedin.com/in/sebastian-rengifo-hidalgo-6368942b9/">
       <LinkedInIcon class="size-4" />
       LinkedIn
+    </SocialPill>
+
+    <SocialPill href="https://www.github.com/sebasrh7">
+      <GitHubIcon class="size-4" />
+      GitHub
     </SocialPill>
   </nav>
 </div>
